@@ -24,3 +24,16 @@ body {
     }
 }
 
+.show-bag , .show-broken-bag {
+    animation: punched forwards 1s;
+}
+
+@keyframes punched  {
+    from {
+        transform: rotateX(120deg)
+    }
+    to {
+        transform: rotateX(360deg)
+    }
+    
+}

@@ -12,11 +12,12 @@
         background-color: rebeccapurple;
         color: wheat;
         cursor: pointer;
-        transition: 1s;
+        transition: 0.5s;
         &:hover {
             background-color: #b58adf;
         }
         &:active {
+            transition: 0s;
             background-color: #dfc3fc;
         }
     }

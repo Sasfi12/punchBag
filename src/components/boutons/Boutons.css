@@ -1,0 +1,30 @@
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    button {
+        font-size: 2em;
+        display: flex;
+        gap: 2rem;
+        border: solid saddlebrown;
+        background-color: rebeccapurple;
+        color: wheat;
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+            background-color: #b58adf;
+        }
+        &:active {
+            background-color: #dfc3fc;
+        }
+    }
+
+}
+.button-container.finished {
+    button:nth-child(1) {
+        display: none;
+    }
+
+}

@@ -1,0 +1,15 @@
+#bag {
+    img {
+        animation: punched infinite alternate;
+    }
+}
+
+@keyframes punched  {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(1000px);
+    }
+    
+}

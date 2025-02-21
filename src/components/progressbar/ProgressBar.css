@@ -1,0 +1,29 @@
+.progress-bar {
+    font-size: 2em;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .health-bar {
+        padding: 1rem;
+    }
+    .health-bar.red {
+        background-color: red;
+        width: 0%;
+        height: 0px;
+        display: none;
+    }
+    .health-bar.green {
+        background-color: green;
+        height: 0px;
+        justify-content: flex-start ; align-items: center;
+        text-align: center;
+        display: flex;
+        box-shadow: 10px 10px 30px teal;
+        
+    }
+    p {
+        text-shadow: 10px 10px 10px teal;
+    }
+}

@@ -3,7 +3,7 @@ function Boutons(props) {
     return (
         <div className={props.buttonDisplay}>
             <button onClick={props.punch}>Punch</button>
-            <button onClick={props.reset}>{props.replayButton}</button>
+            <button onClick={props.reset}>{props.replayText}</button>
         </div>
     )
 }

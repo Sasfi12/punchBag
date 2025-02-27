@@ -1,20 +1,10 @@
 import "./ImageDisplay.css"
 function ImageDisplay(props) {
-    const showBag = (
-        <div className  id="bag">
-            <img src="./bag.png" alt="bag"/>
-        </div>
-    )
-    const showDestroyed = (
-        <div className  id="bag">
-            <img src="./bag-burst.png" alt="destroyed bag" />
-        </div>
-    )
-    const shown = (
-        props.show ? showBag : showDestroyed
-    )
+        
     return(
-        shown
+        <div className  id="bag">
+            {props.show ? <img src="./bag.png" alt="bag"/> : <img src="./bag-burst.png" alt="destroyed bag" />}
+        </div>
     )
 
 } 

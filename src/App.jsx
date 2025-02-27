@@ -43,7 +43,11 @@ const restartFunc = () => {
       <ImageDisplay show={alive}/>
       <h1>punchBag game</h1>
       <ProgressBar health = {health} width = {width}/>
-      <Boutons punch = {puncherFunc} reset = {restartFunc} buttonDisplay={alive ? "button-container" : "button-container finished "} replayButton= {alive ? "Restart" : "Play again"}/>
+      <Boutons 
+        punch = {puncherFunc} 
+        reset = {restartFunc} 
+        buttonDisplay={alive ? "button-container" : "button-container finished "} 
+        replayText= {alive ? "Restart" : "Play again"}/>
 
     </>
   )
